@@ -12,7 +12,7 @@ Lets talk about how this is going to work
 
 ## Structure
 
-We will do an hour every morning before the scrum starting at 9:15BST and ending at 10:15BST. This will be me teaching you guys new cool things about mobile app development. After every session I'll leave you with a little React Native problem to solve. Googling skills will be required and you'll be spending a lot of time with the React Native docs. In an ideal world where there's not too many hotfixes to implement, these tasks can be done in the morning before the tutorial session.
+We will do an hour every morning before the scrum starting at 9:15BST and ending at 10:15BST. This will be me teaching you guys new cool things about mobile app development. After every session I'll leave you with a little problem to solve. Googling skills will be required and you'll be spending a lot of time with the React Native docs. In an ideal world where there's not too many hotfixes to implement, these tasks can be done in the morning before the tutorial session.
 
 So far I'm planning 5 tutorials with the following structure:
 
