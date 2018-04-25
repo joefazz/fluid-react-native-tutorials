@@ -2,7 +2,7 @@
  * ES6 Import syntax
  */
 
-import fetch from "node-fetch";
+// import fetch from "node-fetch";
 
 console.log("Welcome to JavaScript 2018 Edition");
 
@@ -21,24 +21,24 @@ let ukOffice = [
  */
 
 // Old Way - Anonymous Function
-// let britishPeople = ukOffice.filter(function(person) {
-//     return person.origin === "UK";
-// });
+let britishPeople = ukOffice.filter(function(person) {
+    return person.origin === "UK";
+});
 
-// // New Way - Arrow Function
-// britishPeople = ukOffice.filter(person => person.origin === "UK");
+// New Way - Arrow Function
+britishPeople = ukOffice.filter(person => person.origin === "UK");
 
-// linebreak();
+linebreak();
 
-// console.log(britishPeople);
+console.log(britishPeople);
 
-// let peopleWithArrayPosition = ukOffice.map((person, index) => {
-//     return person.name + " is in position " + index;
-// });
+let peopleWithArrayPosition = ukOffice.map((person, index) => {
+    return person.name + " is in position " + index;
+});
 
-// linebreak();
+linebreak();
 
-// console.log(peopleWithArrayPosition);
+console.log(peopleWithArrayPosition);
 
 // ---------------------------------------------------------------------------------------- //
 
@@ -120,23 +120,23 @@ let ukOffice = [
 //  * Promises and Async Await
 //  */
 
-const api = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc?api_key=0c5c192ea6e66126777a2cc6f35c2b0d";
+// const api = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc?api_key=0c5c192ea6e66126777a2cc6f35c2b0d";
 
-fetch(api)
-    .then(response => response.json())
-    .then(json => console.log(json))
-    .catch(error => console.log(error));
+// fetch(api)
+//     .then(response => response.json())
+//     .then(json => console.log(json))
+//     .catch(error => console.log(error));
 
-async function fetchData(uri) {
-    try {
-        let response = await fetch(uri);
+// async function fetchData(uri) {
+//     try {
+//         let response = await fetch(uri);
 
-        let json = await response.json();
+//         let json = await response.json();
 
-        return json;
-    } catch (error) {
-        console.log(error);
-    }
-}
+//         return json;
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
 
-let data = fetchData(api).then(result => console.log(result));
+// let data = fetchData(api).then(result => console.log(result));

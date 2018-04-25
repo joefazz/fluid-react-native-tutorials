@@ -1,9 +1,12 @@
 {
     "name": "lesson-1",
     "version": "1.0.0",
-    "main": "lesson-1.js",
+    "main": "lesson-1.mjs",
     "license": "MIT",
     "dependencies": {
         "node-fetch": "^2.1.2"
+    },
+    "scripts": {
+        "start": "node --experimental-modules lesson-1.mjs"
     }
 }
