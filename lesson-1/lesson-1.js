@@ -46,28 +46,28 @@ console.log(peopleWithArrayPosition);
  * REST - SPREAD SYNTAX
  */
 
-// console.log(ukOffice);
+console.log(ukOffice);
 
-// linebreak();
+linebreak();
 
-// console.log(...ukOffice);
+console.log(...ukOffice);
 
-// let primeNumbers = [2, 3, 5, 7, 11];
+let primeNumbers = [2, 3, 5, 7, 11];
 
-// linebreak();
+linebreak();
 
-// function sum(a, b, c, d, e) {
-//     let result = Number(a + b + c + d + e);
+function sum(a, b, c, d, e) {
+    let result = Number(a + b + c + d + e);
 
-//     console.log(result);
-//     linebreak();
-// }
+    console.log(result);
+    linebreak();
+}
 
-// linebreak();
+linebreak();
 
-// sum(primeNumbers);
+sum(primeNumbers);
 
-// sum(...primeNumbers);
+sum(...primeNumbers);
 
 // ---------------------------------------------------------------------------------------- //
 
@@ -75,68 +75,68 @@ console.log(peopleWithArrayPosition);
  * Destructuring an object
  */
 
-// let config = {
-//     body: { id: "1234", name: "Joe Fazzino" },
-//     method: "GET",
-//     headers: {
-//         Auth: "Bearer asdofjoasdjfasodfjaosdjfoa",
-//         "Response-Type": "application/json"
-//     }
-// };
+let config = {
+    body: { id: "1234", name: "Joe Fazzino" },
+    method: "GET",
+    headers: {
+        Auth: "Bearer asdofjoasdjfasodfjaosdjfoa",
+        "Response-Type": "application/json"
+    }
+};
 
-// // Old way
-// function backend(body, method, headers) {
-//     console.log("Body: ", body, "\n\n", "Method: ", method, "\n\n", "Headers: ", headers);
+// Old way
+function backend(body, method, headers) {
+    console.log("Body: ", body, "\n\n", "Method: ", method, "\n\n", "Headers: ", headers);
 
-//     linebreak();
-//     if (body && method && headers) {
-//         console.log("Calling API...");
-//     } else {
-//         console.log("FATAL ERROR");
-//     }
-// }
+    linebreak();
+    if (body && method && headers) {
+        console.log("Calling API...");
+    } else {
+        console.log("FATAL ERROR");
+    }
+}
 
-// backend(config.body, config.method, config.headers);
+backend(config.body, config.method, config.headers);
 
-// // New way
-// function backend(config) {
-//     const { body, method, headers } = config;
+// New way
+function backend(config) {
+    const { body, method, headers } = config;
 
-//     console.log("Body: ", body, "\n\n", "Method: ", method, "\n\n", "Headers: ", headers);
-//     linebreak();
-//     if (body && method && headers) {
-//         console.log("Calling API...");
-//     } else {
-//         console.log("FATAL ERROR");
-//     }
-// }
+    console.log("Body: ", body, "\n\n", "Method: ", method, "\n\n", "Headers: ", headers);
+    linebreak();
+    if (body && method && headers) {
+        console.log("Calling API...");
+    } else {
+        console.log("FATAL ERROR");
+    }
+}
 
-// backend(config);
+backend(config);
 
 // ---------------------------------------------------------------------------------------- //
 
-// /**
-//  * Fetch
-//  * Promises and Async Await
-//  */
+/**
+ * Fetch
+ * Promises and Async Await
+ */
 
-// const api = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc?api_key=0c5c192ea6e66126777a2cc6f35c2b0d";
+const api = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc?api_key=0c5c192ea6e66126777a2cc6f35c2b0d";
 
-// fetch(api)
-//     .then(response => response.json())
-//     .then(json => console.log(json))
-//     .catch(error => console.log(error));
+fetch(api)
+    .then(response => response.json())
+    .then(json => console.log(json))
+    .catch(error => console.log(error));
 
-// async function fetchData(uri) {
-//     try {
-//         let response = await fetch(uri);
+async function fetchData(uri) {
+    try {
+        let response = await fetch(uri);
 
-//         let json = await response.json();
+        let json = await response.json();
 
-//         return json;
-//     } catch (error) {
-//         console.log(error);
-//     }
-// }
+        return json;
+    } catch (error) {
+        console.log(error);
+    }
+}
 
-// let data = fetchData(api).then(result => console.log(result));
+let data = fetchData(api).then(result => console.log(result));
