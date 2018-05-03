@@ -30,7 +30,6 @@ export class CheckListItem extends React.Component {
 const styles = StyleSheet.create({
     checkItemContainer: {
         flexDirection: "row",
-        flex: 1,
         alignItems: "center",
         paddingHorizontal: 10
     },
