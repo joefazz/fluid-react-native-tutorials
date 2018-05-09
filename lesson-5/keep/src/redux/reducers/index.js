@@ -8,7 +8,7 @@ import { items } from "./itemsReducer";
 const reducers = combineReducers({
     /**
      * You may have never seen this syntax but this is
-     * short hand for writing { todos: todos }
+     * short hand for writing { items: items }
      */
     items
 });

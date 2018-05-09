@@ -6,6 +6,12 @@ import { FlatList, TextInput, RectButton } from "react-native-gesture-handler";
 import { createItem } from "../redux/actions/todoActions";
 import { TodoItem } from "../components/TodoItem";
 
+/**
+ * The first page we see.
+ *
+ * As this application is very simple our containers can afford to be more similar to
+ * a screen however in Fluid this is not the case
+ */
 export class Items extends React.Component {
     constructor(props) {
         super(props);
